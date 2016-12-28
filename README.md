@@ -1,16 +1,22 @@
 # Docker-compose files for a simple uptodate
+# + Logstash
 # InfluxDB
 # + Grafana stack
-# + Telegraf
 
 Get the stack (only once):
 
 ```
-git clone https://github.com/nicolargo/docker-influxdb-grafana.git
+git clone https://github.com/timani/docker-logstash-influxdb-grafana.git
 cd docker-influxdb-grafana
+docker pull logstash
 docker pull grafana/grafana
 docker pull influxdb
-docker pull telegraf
+```
+
+If you want to run Logstash, edit the logstash.conf to yours needs and:
+
+```
+docker exec telegraf telegraf
 ```
 
 Run your stack:
@@ -37,13 +43,7 @@ Update it:
 
 ```
 git pull
+docker pull logstash
 docker pull grafana/grafana
 docker pull influxdb
-docker pull telegraf
-```
-
-If you want to run Telegraf, edit the telegraf.conf to yours needs and:
-
-```
-docker exec telegraf telegraf
 ```
