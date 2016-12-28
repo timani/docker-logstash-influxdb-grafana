@@ -1,6 +1,6 @@
 # Docker-compose files for a simple uptodate
 # + Logstash
-# InfluxDB
+# + InfluxDB
 # + Grafana stack
 
 Get the stack (only once):
