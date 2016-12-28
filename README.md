@@ -1,7 +1,4 @@
 # Docker-compose files for a simple uptodate
-# + Logstash
-# + InfluxDB
-# + Grafana stack
 
 Get the stack (only once):
 
@@ -12,12 +9,23 @@ docker pull logstash
 docker pull grafana/grafana
 docker pull influxdb
 ```
+## Logstash
 
 If you want to run Logstash, edit the logstash.conf to yours needs and:
 
 ```
 docker exec telegraf telegraf
 ```
+
+## InfluxDB
+
+If you want to run Logstash, edit the logstash.conf to yours needs and:
+
+```
+docker exec telegraf telegraf
+```
+
+## Grafana 
 
 Run your stack:
 
