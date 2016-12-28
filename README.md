@@ -1,4 +1,12 @@
-# Docker-compose files for a simple uptodate
+# Docker-compose Logstash + InfluxDB + Grafana
+
+<img src="http://logz.io/wp-content/uploads/2015/12/logstash-logo.png" width="30%" />
+
+## Table of Contents
+
+-   [Overview]
+-   [Architecture]
+-   [Handbooks]
 
 Get the stack (only once):
 
@@ -9,7 +17,10 @@ docker pull logstash
 docker pull grafana/grafana
 docker pull influxdb
 ```
-## Logstash
+
+## Quickstart
+
+### Logstash
 
 If you want to run Logstash, edit the logstash.conf to yours needs and:
 
@@ -17,7 +28,7 @@ If you want to run Logstash, edit the logstash.conf to yours needs and:
 docker exec telegraf telegraf
 ```
 
-## InfluxDB
+### InfluxDB
 
 If you want to run Logstash, edit the logstash.conf to yours needs and:
 
@@ -25,7 +36,7 @@ If you want to run Logstash, edit the logstash.conf to yours needs and:
 docker exec telegraf telegraf
 ```
 
-## Grafana 
+### Grafana 
 
 Run your stack:
 
