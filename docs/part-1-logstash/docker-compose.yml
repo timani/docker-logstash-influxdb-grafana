@@ -4,7 +4,7 @@ version: '2'
 services:
   logstash-grafana:
     build: logstash/
-    command: --config.reload.automatic -f /etc/logstash/conf.d/
+    command: -f /etc/logstash/conf.d/
     volumes:
       - ./logstash/config:/etc/logstash/conf.d
       - ./logs:/logs

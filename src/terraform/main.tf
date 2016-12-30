@@ -9,7 +9,7 @@ resource "digitalocean_droplet" "mywebserver" {
   ssh_keys           = [5515246]         # Key example
   image              = "${var.ubuntu-docker}"
   region             = "${var.do_ams3}"
-  size               = "512mb"
+  size               = "2gb"
   private_networking = true
   backups            = true
   ipv6               = true
