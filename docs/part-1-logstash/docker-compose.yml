@@ -1,0 +1,18 @@
+
+version: '2'
+
+services:
+  logstash-grafana:
+    build: logstash/
+    command: --config.reload.automatic -f /etc/logstash/conf.d/
+    volumes:
+      - ./logstash/config:/etc/logstash/conf.d
+      - ./logs:/logs
+    ports:
+      - "5000:5000"
+    networks:
+      - docker_grafana
+
+networks:
+  docker_grafana:
+    driver: bridge
