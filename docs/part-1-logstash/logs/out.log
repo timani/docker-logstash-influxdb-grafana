@@ -44,3 +44,5 @@
 {"path":"/logs/data.json","@timestamp":"2016-12-30T07:36:16.576Z","@version":"1","host":"1ea709bf1f32","message":"{\"Property 2\":\"value F\",\"Property 2\":\"value V\"},","type":"json","tags":["_jsonparsefailure"]}
 {"path":"/logs/data.json","@timestamp":"2016-12-30T07:38:17.030Z","@version":"1","host":"1ea709bf1f32","message":"{\"Property 1\":\"value A\",\"Property 2\":\"value B\"},","type":"json","tags":["_jsonparsefailure"]}
 {"path":"/logs/data.json","@timestamp":"2016-12-30T07:38:17.036Z","@version":"1","host":"1ea709bf1f32","message":"{\"Property 2\":\"value F\",\"Property 2\":\"value V\"},","type":"json","tags":["_jsonparsefailure"]}
+{"path":"/logs/data.json","@timestamp":"2016-12-30T07:45:38.215Z","@version":"1","host":"1ea709bf1f32","message":"{\"Property 1\":\"value A\",\"Property 2\":\"value B\"},","type":"json","tags":["_jsonparsefailure"]}
+{"path":"/logs/data.json","@timestamp":"2016-12-30T07:45:38.216Z","@version":"1","host":"1ea709bf1f32","message":"{\"Property 2\":\"value F\",\"Property 2\":\"value V\"},","type":"json","tags":["_jsonparsefailure"]}
